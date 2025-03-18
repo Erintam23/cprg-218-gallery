@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header img{
+    max-width: 200px;
+    height: auto;
+}
+
+/*header*/
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #120323;
+    color:#97bf04;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: #d9043d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width:100%;
+}
