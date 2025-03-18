@@ -41,7 +41,7 @@ nav ul li a {
     display: block;
     text-decoration: none;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     width: 95%;
 }
 
@@ -81,7 +81,11 @@ footer {
     
 /*Navigation*/
 
-    nav ul{
+.header-container{
+    padding: 0;
+}
+
+nav ul{
         display: flex;
         background-color: #d9043d;
         width: 100%;
