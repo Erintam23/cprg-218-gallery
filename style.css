@@ -6,6 +6,7 @@ body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background: lightgray;
 }
 
 header img{
@@ -15,37 +16,62 @@ header img{
 
 /*header*/
 .header-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #120323;
     color:#97bf04;
     text-align: center;
-    padding: 10px;
+    width: 100%;
+    padding: 2rem;
 }
 
 /* Navigation */
 nav {
-    background-color: #d9043d;
+    background-color: #120323;
     width: 100%;
 }
 
-nav ul{
+nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;  
+    width: 95%;
 }
 
 nav ul li {
-    display: inline-block;
+    width: 100%;
 }
 
 nav ul li a {
-    text-decoration: none;
+    background-color: #d9043d;
+    border: 2px solid #97bf04;
     color: white;
-    padding: 1rem;
+    text-align: center;
     display: block;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    width: 95%;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+/* Gallery Container */
+#gallery-container{
+    display: grid;
+    grid-template-columns: 1fr
+    }
+
+figure{
+    background-color: white;
+    margin: 3rem;
+    padding: 2rem;
+    max-width: 95%;
+}
+
+#gallery-container img{
+    border-bottom: 1rem solid #97bf04; 
+    width: 95%;
+    align-content: center;
 }
 
 footer {
@@ -54,4 +80,51 @@ footer {
     padding: 20px;
     text-align: center;
     width:100%;
+}
+
+@media screen and (min-width: 768px) {
+    
+    nav {
+        background-color: #d9043d;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        width: 95%;
+    }
+    
+    nav ul li {
+        width: 100%;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        width: 95%;
+    }
+
+    #gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #gallery-container figure:last-child {
+        grid-column: span 2; /* Tiger spans two columns */
+    }
+
+@media screen and (min-width: 1001px) {
+  
+    #gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #gallery-container figure:last-child {
+        grid-column: span 2; /* Tiger spans two columns */
+    }
+
+    #gallery-container img {
+        border-bottom: 0.5rem solid #97bf04;
+    }
+}
 }
