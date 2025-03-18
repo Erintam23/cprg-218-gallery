@@ -85,17 +85,15 @@ footer {
         display: flex;
         background-color: #d9043d;
         width: 100%;
-        margin: none;
-        padding: none;
     }
 
-    
     nav ul li a {
         color: white;
         text-align: center;
         text-decoration: none;
         border: none;
         background-color: none;
+        margin: 0;
     }
 
     #gallery-container {
